@@ -1,0 +1,22 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos temporales
+*.tmp
+*.log
+
+# Archivos originales grandes (no necesarios para producción)
+video_jose.mov
+video_jose_compressed.mp4
+*.srt
+audio jose.txt
+frames/
+frames.zip
+reproductor_completo.zip

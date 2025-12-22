@@ -1,0 +1,721 @@
+/* =============================================================================
+ ======================== CUSTOM STYLE FOR ABLE PLAYER =========================
+ ============================================================================ */
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   GENERAL
+═════════════════════════════════════════════════════════════════════════════ */
+
+/* FOCUS - revertir l'outline dels divs com a botons */
+.able-player div[role=button]:focus {
+    outline: revert;
+    outline-offset: 3px;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   VIDEO
+═════════════════════════════════════════════════════════════════════════════ */
+
+/* Treure la franja negra generada per tenir un line-height */
+.able-media-container {
+    line-height: 0;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   CAPTIONS
+═════════════════════════════════════════════════════════════════════════════ */
+
+/* Posició i centrat */
+.able-captions-wrapper {
+    margin-top: 1em !important;
+    align-content: center;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   BARRA DE TEMPS 
+═════════════════════════════════════════════════════════════════════════════ */
+
+.able-seekbar-wrapper {
+    margin: 6px 0px 0px 3px !important;
+}
+
+.able-seekbar {
+    height: .3em !important;
+    border: none !important;
+    margin: 12px 0 !important;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Augment zona clicable de la barra */
+.able-seekbar::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+}
+
+/* Barra carregada */
+.able-seekbar-loaded {
+    height: .3em !important;
+    background-color: #8A8A8A;
+}
+
+/* Temps completat */
+.able-seekbar-played {
+    height: .3em !important;
+    background-color: #FF0033;
+}
+
+/* Control de la barra de temps */
+.able-seekbar-head {
+    background-color: #FF0033;
+    width: 0.8em;
+    height: 0.8em;
+    outline: none;
+    border: none;
+    transition: box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+/* HOVER - Control de la barra de temps */
+.able-seekbar-head:hover {
+    outline: none !important;
+    box-shadow: 0 0 0 2px #FF0033;
+}
+
+/* FOCUS - Control de la barra de temps */
+.able-seekbar-head:focus {
+    outline: revert;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   CONTROLS DE REPRODUCCIÓ 
+═════════════════════════════════════════════════════════════════════════════ */
+
+/* CAIXA CONTROLS */
+.able-controller {
+    border-bottom: 0px;
+    background-color: black;
+    padding: 2px 8px 8px 8px;
+}
+
+/* Alinear les icones al centre de la caixa per tal de veure el focus centrat */
+.able-controller div[role=button] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HOVER - Treure l'outline i punter visible */
+.able-controller div[role=button]:hover {
+    outline: none;
+    cursor: pointer;
+}
+
+/* HOVER - Color icones*/
+.able-wrapper div[role=button] svg:hover {
+    fill: #FF0033;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   BARRA D'INFORMACIÓ INFERIOR
+═════════════════════════════════════════════════════════════════════════════ */
+
+.able-status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 8px 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   TRANSCRIPCIONS
+═════════════════════════════════════════════════════════════════════════════ */
+
+/* Barra d'idioma transcripcions*/
+.able-window-toolbar {
+    background-color: #262626;
+    padding: 1em;
+}
+
+/* Padding icona */
+.able-window-toolbar .able-button-handler-preferences {
+    padding: 8px;
+}
+
+/* Contenidor en línia per les transcripcions */
+/* Altura inicial */
+.able-transcript {
+    max-height: 400px;
+}
+
+/* Contenidor intern */
+.able-transcript-area {
+    height: auto;
+    padding-bottom: 0px;
+    border-width: 2px;
+}
+
+/* Evitar error en fer zoom de l'ample de les transcripcions*/
+.able-window-toolbar .transcript-language-select-wrapper {
+    float: none;
+}
+
+/* Correcció del Highlight padding per evita que les lletres descendents quedin tallades en fer zoom*/
+.able-highlight {
+    padding: .02em .1em;
+}
+
+/* Restaurem el z-index per evitar que els vídeos quedin per sobre d'altres elements de la pàgina (de 5000 a 0) i eliminem la ombra */
+.able {
+    z-index: 0;
+    box-shadow: none;
+}
+
+.able-wrapper {
+    /* Treure un marge del reproductor superior*/
+    margin: 0;
+}
+
+/* Barra d'estat */
+.able-status-bar {
+    font-size: .8em;
+    cursor: default;
+}
+
+/* Tooltip dels controls */
+.able-tooltip {
+    font-size: .8em;
+    line-height: 1rem;
+    margin-top: 3px;
+    margin-bottom: -10px;
+    padding: 3px 3px;
+    cursor: default;
+}
+
+/* Alinear la icona de separació al centre de la barra */
+img[src*="pipe.png"] {
+    vertical-align: middle;
+}
+
+/* Font family global amb la tipografia de AOC*/
+.able-player,
+.able-modal-dialog,
+.transcript-wrapper {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Botó de preferències - NORMAL */
+.able-window-toolbar .able-button-handler-preferences svg {
+    width: 0.9em;
+    height: 0.9em;
+    fill: white;
+}
+
+/* Botó de preferències - HOVER */
+.able-window-toolbar .able-button-handler-preferences:hover {
+    outline: none;
+    cursor: pointer;
+}
+
+.able-window-toolbar .able-button-handler-preferences svg:hover {
+    fill: #FF0033;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   SLIDER VOLUME
+═════════════════════════════════════════════════════════════════════════════ */
+
+.able-volume-slider {
+    width: 28px;
+    height: 80px;
+    background-color: black;
+    padding: 0px;
+    bottom: 0;
+    top: -75px;
+}
+
+.able-volume-slider input[type=range] {
+    width: 60px;
+    height: 5px;
+    border-radius: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    transform: rotate(-90deg);
+    transform-origin: right;
+    position: absolute;
+    right: 14px;
+    top: 12px;
+    border: none;
+}
+
+.able-volume-slider input[type=range]:hover,
+.able-volume-slider input[type=range]:active {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.able-volume-slider input[type=range]::-webkit-slider-thumb:focus,
+.able-volume-slider input[type=range]::-webkit-slider-thumb:active {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Thumb (puntet) - NORMAL */
+.able-volume-slider input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Thumb (puntet) - HOVER */
+.able-volume-slider input[type=range]::-webkit-slider-thumb:hover {
+    background: white;
+    box-shadow: 0 0 0 2px white !important;
+    transition: box-shadow 0.2s ease;
+    border: none !important;
+    outline: none !important;
+}
+
+/* FIREFOX */
+.able-volume-slider input[type=range]::-moz-range-track {
+    background: transparent;
+    height: .35em;
+    outline: none;
+    border: none;
+}
+
+.able-volume-slider input[type=range]::-moz-range-thumb {
+    width: 1em;
+    height: 1em;
+    background: white;
+    border-radius: 50%;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.able-volume-slider input[type=range]::-moz-range-thumb:hover {
+    background: white;
+    box-shadow: 0 0 0 2px white;
+    transition: box-shadow 0.2s ease;
+    border: none;
+    outline: none;
+}
+
+.able-volume-slider input[type=range]::-moz-focus-outer {
+    border: 0 !important;
+    outline: none !important;
+}
+
+@-moz-document url-prefix() {
+    .able-volume-slider input[type=range] {
+        transform: none;
+        width: 5px;
+        height: 60px;
+        right: 12px;
+        top: 8px;
+    }
+}
+
+/* Restaurar l'outline del navegador quan es fa focus a un input*/
+.able-controller input:focus {
+    outline: revert;
+    outline-offset: 4px;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   PREFERÈNCES D'USUARI
+═════════════════════════════════════════════════════════════════════════════ */
+
+/* Popup menú preferències*/
+.able-popup {
+    transform: translateY(-1.9em);
+    border-radius: 0.8em;
+    background: #262626;
+    opacity: 0.95;
+    font-size: .8em;
+}
+
+.able-window-toolbar .able-popup {
+    transform: translateY(0);
+}
+
+.able-popup li {
+    padding: .2em .8em;
+    margin: 0.6em 0;
+    color: white;
+    line-height: 1.5em;
+    cursor: pointer;
+}
+
+.able-popup li.able-focus {
+    background-color: transparent;
+    color: white;
+}
+
+.able-popup li:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+.able-popup li:focus-visible,
+.able-popup li.able-focus:focus-visible {
+    background-color: white;
+    color: black;
+}
+
+.able-popup li:hover {
+    background-color: white;
+    color: black;
+}
+
+.able-popup-captions li[aria-checked=true]::before {
+    padding-left: 0.8em;
+    padding-right: 0.4em;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   MODAL DIALOGS
+═════════════════════════════════════════════════════════════════════════════ */
+/* General */
+div.able-modal-dialog {
+    position: fixed !important;
+    margin: 0;
+    padding: 1em;
+    color: white;
+    background: #262626;
+    border: none;
+    border-radius: 0.5em;
+    opacity: 1;
+    overflow: auto;
+    text-align: left;
+}
+
+/* Modal dialog - H1 */
+div.able-modal-dialog h1 {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    padding-top: 0.5em;
+    font-size: 2em !important;
+    line-height: 1.3em !important;
+    color: white !important;
+}
+
+/* Modal dialog - H2 */
+.able-prefs-form h2 {
+    margin-bottom: 1.5em;
+    font-size: 1.5em !important;
+    line-height: 1.3em !important;
+    color: white !important;
+}
+
+/* Modal dialog - p */
+div.able-modal-dialog p {
+    font-size: 1em !important;
+    line-height: 1.5em !important;
+}
+
+/* Modal dialog - ul */
+.able-prefs-form ul {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+/* Modal dialog - Preferències dels subtítols */
+.able-prefs-captions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem 2rem;
+    padding: 1rem;
+}
+
+.able-prefs-captions>div,
+.able-prefs-descriptions>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.able-prefs-captions label,
+.able-prefs-descriptions label {
+    margin-bottom: 0.5em;
+    padding-right: 0;
+    width: auto;
+    color: white;
+}
+
+.able-prefs-captions select,
+.able-prefs-descriptions select {
+    padding: 0.5em;
+    color: white;
+    background-color: #3C3C3C;
+    border: 1px solid white;
+    border-radius: 0.5em;
+    cursor: pointer;
+    width: 100%;
+}
+
+.able-prefs-captions select:hover,
+.able-prefs-descriptions select:hover {
+    outline: 2px solid white;
+}
+
+.able-prefs-captions select:focus,
+.able-prefs-descriptions select:focus {
+    outline: revert;
+    outline-offset: 3px;
+}
+
+div.able-prefDescPause {
+    margin-top: 2em;
+}
+
+/* Estil per les opcions del select */
+.able-prefs-captions select option,
+.able-prefs-descriptions select option {
+    cursor: pointer;
+    background-color: #3C3C3C;
+    color: white;
+}
+
+.able-prefs-captions select option:hover,
+.able-prefs-captions select option:focus,
+.able-prefs-descriptions select option:hover,
+.able-prefs-descriptions select option:focus {
+    background-color: #FF0033 !important;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .able-prefs-captions,
+    .able-prefs-descriptions {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.able-prefs-captions {
+    margin: 1em !important;
+}
+
+.able-prefs-form div[role=group]>div {
+    margin-left: 0;
+}
+
+.able-prefs-captions div label {
+    padding-left: 0 !important;
+}
+
+/* Previsualització subtítols ═══════════════════════════════════════════════ */
+.able-captions-sample {
+    margin: 2em 1em 1em 1em;
+    padding: 0.5em;
+    box-shadow: 0 0 3em rgba(255, 255, 255, 0.3);
+}
+
+/* Text de mostra Audiodescripció  ══════════════════════════════════════════ */
+.able-desc-sample {
+    margin: 2em 1em 1em 1em;
+    box-shadow: 0 0 3em rgba(255, 255, 255, 0.3);
+}
+
+/* Dreceres de teclat  ══════════════════════════════════════════════════════ */
+span.able-modkey,
+span.able-modkey-alt,
+span.able-modkey-ctrl,
+span.able-modkey-shift {
+    color: #ff597a;
+}
+
+.able-prefAltKey,
+.able-prefCtrlKey,
+.able-prefShiftKey {
+    margin-bottom: 0.2em;
+}
+
+.able-prefs-form-keyboard li {
+    margin-bottom: 0.2em;
+}
+
+/* Checkboxs i posició dels textos circumdants  ═════════════════════════════ */
+input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    accent-color: #FF0033;
+    cursor: pointer;
+}
+
+.able-prefs-form div[role=group]>div>input {
+    width: 1.2rem;
+}
+
+.able-prefHighlight {
+    margin-bottom: 1em;
+}
+
+.able-prefs-form div[role=group]>div>label {
+    vertical-align: bottom;
+}
+
+.transcript-language-select-wrapper {
+    margin-top: 1em;
+}
+
+.able-window-toolbar label {
+    vertical-align: top;
+}
+
+.transcript-language-select-wrapper select {
+    padding: 0.5em;
+    color: white;
+    background-color: #3C3C3C;
+    border: 1px solid white;
+    border-radius: 0.5em;
+    cursor: pointer;
+    width: auto;
+}
+
+.transcript-language-select-wrapper select:hover {
+    outline: 2px solid white;
+}
+
+.transcript-language-select-wrapper label {
+    vertical-align: revert !important;
+}
+
+.able-controller div[role=button]:focus,
+.able-controller input:focus,
+.able-seekbar-head:focus,
+.able-window-toolbar input:focus,
+.able-window-toolbar select:focus {
+    outline: revert !important;
+    outline-offset: 3px;
+}
+
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   MODAL DIALOGS - BUTTONS
+═════════════════════════════════════════════════════════════════════════════ */
+
+button.modal-button {
+    margin-right: 5px;
+    padding: 0.5em 1em;
+    background-color: #20d71a;
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.able-modal-dialog .modal-button {
+    display: inline-block;
+    margin: 1em 0.5em;
+}
+
+button.modal-button {
+    background-color: white !important;
+    color: black !important;
+    font-weight: 600 !important;
+}
+
+button.modal-button:hover {
+    padding: 0.5em 1em !important;
+    background-color: #FF0033 !important;
+    color: black !important;
+}
+
+/* Botó de tancament modal */
+.able-modal-dialog .modalCloseButton {
+    margin: 1em;
+    background: none !important;
+    border: 0;
+    cursor: pointer;
+}
+
+.able-modal-dialog .modalCloseButton svg {
+    width: 2em;
+    height: 2em;
+    fill: white;
+}
+
+.able-modal-dialog .modalCloseButton svg:hover {
+    fill: #FF0033;
+}
+
+div.able-modal-dialog button:focus,
+div.able-modal-dialog button:hover,
+div.able-modal-dialog input:focus,
+.transcript-wrapper input:focus {
+    outline: revert;
+    outline-offset: 3px;
+}
+
+.able-modal-dialog input:hover,
+.able-window-toolbar input:hover {
+    outline: 2px solid white !important;
+}
+
+.modal-btn-wrapper {
+    text-align: center;
+}
+
+/* Botó Preferencies - Transcripció */
+.able-window-toolbar .able-button-handler-preferences:focus {
+    outline: revert !important;
+    line-height: 0;
+}
+
+/* Border transcripció en mode Drag */
+.able-drag {
+    border: none;
+    outline: 1px auto Highlight;
+    outline: 1px auto -webkit-focus-ring-color;
+    outline-offset: 2px;
+}
+
+/* Botó de redimensionar el transcript */
+.able-resizable {
+    right: 20px;
+}
+
+/* Botó de redimensionar el trasnscript - HOVER */
+.able-resizable:hover svg line {
+    stroke: #FF0033 !important;
+}
+
+/* Redimensionar la finestra de la transcripció */
+.able-resize-form>div:not(.modal-btn-wrapper) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.able-resize-form div div {
+    margin: 0;
+    margin-bottom: 1.5em;
+}
+
+.able-resize-form input[type=text] {
+    width: 4.5rem;
+}

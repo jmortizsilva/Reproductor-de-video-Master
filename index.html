@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video Accesible - Able Player</title>
+    
+    <!-- Dependencies - jQuery & js-cookie -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    
+    <!-- CSS - Able Player (local) -->
+    <link rel="stylesheet" href="build/ableplayer.min.css" type="text/css"/>
+    
+    <!-- CSS - Custom TOTHOMweb -->
+    <link rel="stylesheet" href="custom-player.css" type="text/css"/>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+        
+        .video-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reproductor de Video Accesible</h1>
+    
+    <div class="video-wrapper">
+        <video 
+            id="video1" 
+            data-able-player 
+            data-skin="2020"
+            data-lang="es"
+            preload="auto" 
+            width="auto"
+            height="auto"
+            playsinline>
+            
+            <!-- Fuente de video -->
+            <source 
+                type="video/mp4" 
+                src="video_jose_github.mp4"/>
+            
+            <!-- CAPTIONS español (subtítulos optimizados con identificación de hablantes por color) -->
+            <track 
+                kind="captions" 
+                src="video_jose_subtitulos.vtt" 
+                srclang="es" 
+                label="Español"
+                default />
+            
+            <!-- DESCRIPTIONS español (audiodescripción profesional para personas con discapacidad visual) -->
+            <track 
+                kind="descriptions" 
+                src="video_jose_audiodescripcion.vtt" 
+                srclang="es" 
+                label="Audiodescripción" />
+        </video>
+    </div>
+    
+    <!-- Transcripción del video -->
+    <section class="transcripcion" style="max-width: 800px; margin: 40px auto; padding: 20px; background-color: #f5f5f5; border-radius: 8px;">
+        <h2 style="color: #333; margin-bottom: 20px;">Transcripción</h2>
+        <div style="line-height: 1.8; color: #555;">
+            <p><strong style="color: #0066cc;">Mónica:</strong> Hola, me llamo Mónica y aquí conmigo tengo a Jose, que bueno, vamos a hablar con él hoy de su experiencia profesional, que si no estoy mal informada es bastante extensa. Jose, cuéntame un poco acerca de ti.</p>
+            
+            <p><strong style="color: #cc6600;">Jose:</strong> Pues buenas, Mónica, ¿qué tal? Pues nada, yo me llamo Jose, soy extremeño, soy de Badajoz, tengo 47 años y ya llevo viviendo como 25 años, 27 fuera de mi casa. Madrid, Sevilla, he hecho un poco de todo.</p>
+            
+            <p><strong style="color: #0066cc;">Mónica:</strong> Bueno, y la primera vez que saliste de casa, ¿a qué fuiste? ¿Qué fuiste a hacer?</p>
+            
+            <p><strong style="color: #cc6600;">Jose:</strong> Pues la primera vez que salí de casa fui a vivir y estudiar en Madrid e hice la diplomatura de fisioterapia. Estuve estudiando fisioterapia en la escuela universitaria de la ONCE y luego estuve trabajando cuatro años y medio de fisioterapeuta en una clínica privada con pacientes de diferente tipología.</p>
+            
+            <p><strong style="color: #0066cc;">Mónica:</strong> Y estabas a gusto allí, supongo y demás, pero de repente decidiste cambiar de vida, si no estoy mal informada, y cambiaste totalmente de vida. ¿Qué fue lo que hiciste?</p>
+            
+            <p><strong style="color: #cc6600;">Jose:</strong> Pues a mí siempre me ha gustado la tecnología, siempre he sido muy cacharrero y mientras trabajaba hice un máster de tecnologías accesibles para los servicios de la Sociedad de la Información en la UOC, en la Universidad Oberta de Cataluña. Lo hice durante dos años mientras trabajaba y nada, a los cuatro años y medio me surgió la oportunidad y entré a trabajar como consultor de accesibilidad en Technosite, que es una empresa del Grupo Social 11 que ahora es Ilunion Tecnología y Accesibilidad. Y ahí estuve siete años y medio haciendo auditorías de accesibilidad, de páginas web y de aplicaciones móviles.</p>
+            
+            <p><strong style="color: #0066cc;">Mónica:</strong> Y durante ese tiempo estabas en Sevilla, ¿verdad?</p>
+            
+            <p><strong style="color: #cc6600;">Jose:</strong> Sí, estuve teletrabajando en Sevilla, sí.</p>
+            
+            <p><strong style="color: #0066cc;">Mónica:</strong> Y entonces, cuando a los siete años y medio volviste a decidir, como veis no se queda quieto este hombre, volviste a decidir que querías otro cambio de vida y esta vez, ¿qué decidiste hacer?</p>
+            
+            <p><strong style="color: #cc6600;">Jose:</strong> Pues nada, hice un curso de instructor de tiflotecnología y braille en ONCE y me cambié de trabajar con las empresas a trabajar con los usuarios. Estuve trabajando pues un año y medio más o menos, enseñando a usuarios ciegos y con deficiencia visual grave pues a manejar la tecnología.</p>
+            
+            <p><strong style="color: #0066cc;">Mónica:</strong> Supongo que ahí viste pues un poco de diferencia, ¿no? Entre lo que es el trato con una empresa que al final son las que hacen las cosas dirigidas a los usuarios y ya al trabajar con ellos y poder pues enfrentarte a esas barreras.</p>
+            
+            <p><strong style="color: #cc6600;">Jose:</strong> Sí, es diferente, es diferente trabajar con empresas grandes porque fue lo que me tocó en ese momento trabajar con empresas muy grandes a trabajar con usuarios muy básicos que muchos de ellos acaban de perder la vista. Y claro, es un cambio totalmente, es algo totalmente diferente a la hora de trabajar, es muy diferente pero muy enriquecedor, la verdad.</p>
+            
+            <p><strong style="color: #0066cc;">Mónica:</strong> Bueno, y ya creo que llegamos un poco a lo que estás haciendo en la actualidad, que si nos cuentas un poco pues en qué consiste.</p>
+            
+            <p><strong style="color: #cc6600;">Jose:</strong> Pues ahora trabajo en la ONCE, trabajo en el Centro de Tiflotecnología e Innovación y soy el responsable del departamento de consultoría e innovación y mi trabajo es coordinar diferentes equipos. Pues coordino los equipos de desarrollo software donde hacemos aplicaciones específicas que no están en las tiendas habitualmente, alguna aplicación para acceder a los libros digitales que ONCE pone a disposición de los afiliados o al contenido audiodescrito o aplicaciones para transcribir textos de braille a tinta, un editor científico matemático. Y luego también coordino el área de evaluaciones donde hacemos evaluaciones de accesibilidad de aplicaciones móviles y páginas web.</p>
+            
+            <p><strong style="color: #cc6600;">Jose:</strong> Un área de asesoría tiflotecnica que son los técnicos que enseñan a los usuarios a manejar la tecnología, como yo hacía antes. Y luego algo muy diferente que es la parte de diseño y producción donde trabajamos con impresoras 3D, con impresoras de tinta ultravioleta y con cortadoras láser para hacer productos muy específicos, pues por ejemplo como juegos de mesa o adaptaciones para dispositivos de vida diaria como las cocinas o las cafeteras o un poco de todo.</p>
+            
+            <p><strong style="color: #0066cc;">Mónica:</strong> Sí, pero como no se puede estar quieto, además de dedicarse a este trabajo tan apasionante, ¿qué haces en tu tiempo libre?</p>
+            
+            <p><strong style="color: #cc6600;">Jose:</strong> Bueno, pues en mi tiempo libre de todo un poco. Me gusta hacer senderismo, viajar, leer, estar con mi familia, de todo un poco. Y ahora estoy haciendo un máster en la Universidad de Barcelona de accesibilidad y diseño para la educación.</p>
+            
+            <p><strong style="color: #0066cc;">Mónica:</strong> Pues nada, esto es lo que nos cuenta Jose. Así que ahí tenéis su interesante trayectoria profesional y académica. Espero que os haya gustado.</p>
+            
+            <p><strong style="color: #cc6600;">Jose:</strong> Gracias.</p>
+        </div>
+    </section>
+    
+    <!-- JavaScript - Able Player (local) -->
+    <script src="build/ableplayer.min.js"></script>
+    
+    <!-- JavaScript - Custom TOTHOMweb -->
+    <script src="custom-player.js"></script>
+</body>
+</html>
