@@ -15,7 +15,7 @@ Thumbs.db
 # Archivos originales grandes (no necesarios para producción)
 video_jose.mov
 video_jose_compressed.mp4
-video_jose_github.mp4
+video_jose_con_audiodescripcion.mp4
 *.srt
 audio jose.txt
 frames/
@@ -30,4 +30,4 @@ generar_audiodescripcion.py
 crear_pista_audiodescripcion.py
 audiodescripcion_audio/
 audiodescripcion_completa.mp3
-video_jose_audiodescripcion.vtt
+video_jose_audiodescripcion_audio.vtt
