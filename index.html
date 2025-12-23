@@ -36,20 +36,19 @@
             margin: 0 auto;
         }
         
-        /* Estilos para subtítulos con identificación de hablantes */
-        .able-captions-wrapper .able-captions-div .monica {
+        /* Estilos para subtítulos con identificación de hablantes por VOZ (especificación W3C WebVTT) */
+        video::cue(v[voice="Monica"]) {
             color: cyan !important;
         }
         
-        .able-captions-wrapper .able-captions-div .jose {
+        video::cue(v[voice="Jose"]) {
             color: yellow !important;
         }
         
-        /* Asegurar fondo negro semitransparente para contraste */
-        .able-captions-wrapper .able-captions-div {
+        /* Estilos generales para los subtítulos */
+        video::cue {
             background-color: rgba(0, 0, 0, 0.8) !important;
-            padding: 10px 20px !important;
-            border-radius: 5px !important;
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -72,7 +71,7 @@
                 type="video/mp4" 
                 src="video_jose_github.mp4"/>
             
-            <!-- CAPTIONS español (subtítulos optimizados con identificación de hablantes por color) -->
+            <!-- CAPTIONS español (subtítulos con identificación por etiquetas de voz según W3C WebVTT) -->
             <track 
                 kind="captions" 
                 src="video_jose_subtitulos.vtt" 

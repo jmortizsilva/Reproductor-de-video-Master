@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Subtítulos WebVTT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        video {
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin: 0 auto 30px;
+            background-color: #000;
+        }
+        
+        .info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .info h2 {
+            color: #0066cc;
+            margin-top: 0;
+        }
+        
+        .info p {
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .color-sample {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        
+        .cyan { background-color: cyan; }
+        .yellow { background-color: yellow; }
+        
+        /* Estilos WebVTT para identificación de hablantes por voz */
+        video::cue(v[voice="Monica"]) {
+            color: cyan;
+        }
+        
+        video::cue(v[voice="Jose"]) {
+            color: yellow;
+        }
+        
+        video::cue {
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test de Subtítulos WebVTT</h1>
+    
+    <video controls crossorigin="anonymous">
+        <source src="video_jose_github.mp4" type="video/mp4">
+        <track kind="captions" src="video_jose_subtitulos.vtt" srclang="es" label="Español" default>
+        Tu navegador no soporta el elemento video.
+    </video>
+    
+    <div class="info">
+        <h2>✅ Verificación de Colores según UNE 153010</h2>
+        <p><strong>Los subtítulos deberían mostrarse con:</strong></p>
+        <ul>
+            <li><span class="color-sample cyan"></span> <strong>Mónica:</strong> Color cyan (cian)</li>
+            <li><span class="color-sample yellow"></span> <strong>Jose:</strong> Color yellow (amarillo)</li>
+        </ul>
+        
+        <p><strong>Implementación en el VTT (formato W3C estándar):</strong></p>
+        <pre style="background-color: #f0f0f0; padding: 15px; border-radius: 5px; overflow-x: auto;">
+WEBVTT
+
+NOTE
+Subtítulos con etiquetas de voz según especificación W3C
+
+1
+00:00:04.000 --> 00:00:08.500
+&lt;v Monica&gt;Hola, me llamo Mónica&lt;/v&gt;
+&lt;v Monica&gt;y aquí conmigo tengo a Jose.&lt;/v&gt;
+
+2
+00:00:18.920 --> 00:00:22.500
+&lt;v Jose&gt;Pues buenas, Mónica...&lt;/v&gt;
+        </pre>
+        
+        <p><strong>CSS para aplicar colores:</strong></p>
+        <pre style="background-color: #f0f0f0; padding: 15px; border-radius: 5px; overflow-x: auto;">
+video::cue(v[voice="Monica"]) { color: cyan; }
+video::cue(v[voice="Jose"]) { color: yellow; }
+        </pre>
+        
+        <h3>🔍 ¿Qué estamos probando?</h3>
+        <p>Este reproductor HTML5 nativo interpreta directamente el archivo VTT sin intermediarios. Si los colores aparecen correctamente aquí, significa que:</p>
+        <ul>
+            <li>✅ El archivo VTT está correctamente implementado según la especificación WebVTT</li>
+            <li>✅ Cumple con la normativa UNE 153010 de identificación de hablantes por color</li>
+            <li>✅ Es compatible con reproductores estándar HTML5</li>
+        </ul>
+        
+        <p><strong>Nota:</strong> Si los colores no aparecen en Able Player pero sí aquí, el problema es que Able Player no soporta completamente las etiquetas de voz &lt;v&gt; del estándar WebVTT.</p>
+        
+        <h3>📋 Compatibilidad de navegadores con etiquetas de voz WebVTT</h3>
+        <p>Las etiquetas &lt;v&gt; con CSS ::cue() son soportadas en:</p>
+        <ul>
+            <li>✅ Chrome/Edge 89+</li>
+            <li>✅ Firefox 115+</li>
+            <li>✅ Safari 14+</li>
+        </ul>
+        <p>Estás usando: <strong id="browser"></strong></p>
+    </div>
+    
+    <script>
+        // Detectar navegador
+        const userAgent = navigator.userAgent;
+        let browserName = "Navegador desconocido";
+        
+        if (userAgent.indexOf("Chrome") > -1 && userAgent.indexOf("Edg") === -1) {
+            browserName = "Google Chrome";
+        } else if (userAgent.indexOf("Edg") > -1) {
+            browserName = "Microsoft Edge";
+        } else if (userAgent.indexOf("Firefox") > -1) {
+            browserName = "Mozilla Firefox";
+        } else if (userAgent.indexOf("Safari") > -1) {
+            browserName = "Safari";
+        }
+        
+        document.getElementById("browser").textContent = browserName;
+    </script>
+</body>
+</html>
