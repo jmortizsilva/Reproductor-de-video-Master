@@ -1,479 +1,438 @@
 WEBVTT
 
-NOTE
-Subtítulos optimizados según normativa de accesibilidad UNE 153010
-Máximo 17 caracteres por segundo (más estricto que los 15 cps de UNE)
-Identificación de hablantes por clase (etiquetas <c> para Able Player)
-Colores según UNE 153010:
-- Jose (protagonista principal): Amarillo sobre negro
-- Monica (segundo protagonista): Verde sobre negro
-
-1
 00:00:02.470 --> 00:00:07.550
-<c.monica>(MONICA) Hola, me llamo Mónica</c>
-<c.monica>(MONICA) y aquí conmigo tengo a Jose.</c>
+MONICA:
+Hola, me llamo Mónica y aquí conmigo tengo
+a Jose.
 
-2
 00:00:07.975 --> 00:00:12.635
-<c.monica>(MONICA) Vamos a hablar con él</c>
-<c.monica>(MONICA) de su experiencia profesional,</c>
+MONICA:
+Vamos a hablar con él de su experiencia
+profesional,
 
-3
 00:00:12.765 --> 00:00:15.695
-<c.monica>(MONICA) que si no estoy mal informada</c>
-<c.monica>(MONICA) es bastante extensa.</c>
+MONICA:
+que si no estoy mal informada es bastante
+extensa.
 
-4
 00:00:16.535 --> 00:00:18.789
-<c.monica>(MONICA) Jose, cuéntame</c>
-<c.monica>(MONICA) un poco acerca de ti.</c>
+MONICA:
+Jose, cuéntame un poco acerca de ti.
 
-5
-00:00:18.920 --> 00:00:22.500
-<c.jose>(JOSE) Pues buenas, Mónica, ¿qué tal?</c>
-<c.jose>(JOSE) Yo me llamo Jose,</c>
+00:00:18.920 --> 00:00:22.380
+JOSE:
+Pues buenas, Mónica, ¿qué tal? Yo me llamo
+Jose,
 
-6
-00:00:22.500 --> 00:00:25.500
-<c.jose>(JOSE) soy extremeño, de Badajoz.</c>
-<c.jose>(JOSE) Tengo 47 años</c>
+00:00:22.500 --> 00:00:25.380
+JOSE:
+soy extremeño, de Badajoz. Tengo 47 años
 
-7
-00:00:25.500 --> 00:00:28.500
-<c.jose>(JOSE) y llevo viviendo</c>
-<c.jose>(JOSE) como 25, 27 años fuera de casa.</c>
+00:00:25.500 --> 00:00:28.380
+JOSE:
+y llevo viviendo como 25, 27 años fuera de
+casa.
 
-8
-00:00:28.500 --> 00:00:30.980
-<c.jose>(JOSE) Madrid, Sevilla...</c>
-<c.jose>(JOSE) He hecho un poco de todo.</c>
+00:00:28.500 --> 00:00:30.860
+JOSE:
+Madrid, Sevilla... He hecho un poco de
+todo.
 
-9
 00:00:30.980 --> 00:00:34.960
-<c.jose>(JOSE) ...</c>
+JOSE:
+...
 
-10
-00:00:36.240 --> 00:00:39.500
-<c.monica>(MONICA) Bueno, y la primera vez</c>
-<c.monica>(MONICA) que saliste de casa,</c>
+00:00:36.240 --> 00:00:39.380
+MONICA:
+Bueno, y la primera vez que saliste de
+casa,
 
-11
 00:00:39.500 --> 00:00:41.920
-<c.monica>(MONICA) ¿a qué fuiste?</c>
-<c.monica>(MONICA) ¿Qué fuiste a hacer?</c>
+MONICA:
+¿a qué fuiste? ¿Qué fuiste a hacer?
 
-12
-00:00:42.140 --> 00:00:46.000
-<c.jose>(JOSE) La primera vez que salí de casa</c>
-<c.jose>(JOSE) fui a vivir y estudiar en Madrid.</c>
+00:00:42.140 --> 00:00:45.880
+JOSE:
+La primera vez que salí de casa fui a
+vivir y estudiar en Madrid.
 
-13
-00:00:46.000 --> 00:00:49.000
-<c.jose>(JOSE) Hice la diplomatura</c>
-<c.jose>(JOSE) de fisioterapia.</c>
+00:00:46.000 --> 00:00:48.880
+JOSE:
+Hice la diplomatura de fisioterapia.
 
-14
-00:00:49.000 --> 00:00:52.500
-<c.jose>(JOSE) Estuve estudiando</c>
-<c.jose>(JOSE) en la escuela universitaria</c>
+00:00:49.000 --> 00:00:52.380
+JOSE:
+Estuve estudiando en la escuela
+universitaria
 
-15
-00:00:52.500 --> 00:00:55.000
-<c.jose>(JOSE) de la ONCE</c>
-<c.jose>(JOSE) y trabajé cuatro años y medio</c>
+00:00:52.500 --> 00:00:54.880
+JOSE:
+de la ONCE y trabajé cuatro años y medio
 
-16
-00:00:55.000 --> 00:00:58.500
-<c.jose>(JOSE) de fisioterapeuta</c>
-<c.jose>(JOSE) en una clínica privada</c>
+00:00:55.000 --> 00:00:58.380
+JOSE:
+de fisioterapeuta en una clínica privada
 
-17
 00:00:58.500 --> 00:01:02.220
-<c.jose>(JOSE) con pacientes</c>
-<c.jose>(JOSE) de diferente tipología.</c>
+JOSE:
+con pacientes de diferente tipología.
 
-18
-00:01:06.440 --> 00:01:09.500
-<c.monica>(MONICA) Y estabas a gusto allí,</c>
-<c.monica>(MONICA) supongo,</c>
+00:01:06.440 --> 00:01:09.380
+MONICA:
+Y estabas a gusto allí, supongo,
 
-19
-00:01:09.500 --> 00:01:12.500
-<c.monica>(MONICA) pero de repente decidiste</c>
-<c.monica>(MONICA) cambiar de vida.</c>
+00:01:09.500 --> 00:01:12.380
+MONICA:
+pero de repente decidiste cambiar de vida.
 
-20
-00:01:12.500 --> 00:01:15.500
-<c.monica>(MONICA) Si no estoy mal informada,</c>
-<c.monica>(MONICA) cambiaste totalmente de vida.</c>
+00:01:12.500 --> 00:01:15.380
+MONICA:
+Si no estoy mal informada, cambiaste
+totalmente de vida.
 
-21
-00:01:15.500 --> 00:01:17.060
-<c.monica>(MONICA) ¿Qué fue lo que hiciste?</c>
+00:01:15.500 --> 00:01:16.940
+MONICA:
+¿Qué fue lo que hiciste?
 
-22
-00:01:17.060 --> 00:01:20.500
-<c.jose>(JOSE) A mí siempre me ha gustado</c>
-<c.jose>(JOSE) la tecnología.</c>
+00:01:17.060 --> 00:01:20.380
+JOSE:
+A mí siempre me ha gustado la tecnología.
 
-23
-00:01:20.500 --> 00:01:23.500
-<c.jose>(JOSE) Siempre he sido muy cacharrero</c>
-<c.jose>(JOSE) y mientras trabajaba</c>
+00:01:20.500 --> 00:01:23.380
+JOSE:
+Siempre he sido muy cacharrero y mientras
+trabajaba
 
-24
-00:01:23.500 --> 00:01:26.500
-<c.jose>(JOSE) hice un máster</c>
-<c.jose>(JOSE) de tecnologías accesibles</c>
+00:01:23.500 --> 00:01:26.380
+JOSE:
+hice un máster de tecnologías accesibles
 
-25
-00:01:26.500 --> 00:01:30.040
-<c.jose>(JOSE) para los servicios</c>
-<c.jose>(JOSE) de la Sociedad de la Información</c>
+00:01:26.500 --> 00:01:29.920
+JOSE:
+para los servicios de la Sociedad de la
+Información
 
-26
-00:01:30.040 --> 00:01:33.000
-<c.jose>(JOSE) en la UOC,</c>
-<c.jose>(JOSE) Universidad Oberta de Cataluña.</c>
+00:01:30.040 --> 00:01:32.880
+JOSE:
+en la UOC, Universidad Oberta de Cataluña.
 
-27
-00:01:33.000 --> 00:01:36.000
-<c.jose>(JOSE) Lo hice durante dos años</c>
-<c.jose>(JOSE) mientras trabajaba.</c>
+00:01:33.000 --> 00:01:35.880
+JOSE:
+Lo hice durante dos años mientras
+trabajaba.
 
-28
-00:01:36.000 --> 00:01:39.500
-<c.jose>(JOSE) A los cuatro años y medio</c>
-<c.jose>(JOSE) me surgió la oportunidad</c>
+00:01:36.000 --> 00:01:39.380
+JOSE:
+A los cuatro años y medio me surgió la
+oportunidad
 
-29
-00:01:39.500 --> 00:01:42.500
-<c.jose>(JOSE) y entré a trabajar como consultor</c>
-<c.jose>(JOSE) de accesibilidad en Technosite.</c>
+00:01:39.500 --> 00:01:42.380
+JOSE:
+y entré a trabajar como consultor de
+accesibilidad en Technosite.
 
-30
-00:01:42.500 --> 00:01:45.500
-<c.jose>(JOSE) Empresa del Grupo Social 11</c>
-<c.jose>(JOSE) que ahora es Ilunion</c>
+00:01:42.500 --> 00:01:45.380
+JOSE:
+Empresa del Grupo Social 11 que ahora es
+Ilunion
 
-31
-00:01:45.500 --> 00:01:48.500
-<c.jose>(JOSE) Tecnología y Accesibilidad.</c>
-<c.jose>(JOSE) Estuve siete años y medio</c>
+00:01:45.500 --> 00:01:48.380
+JOSE:
+Tecnología y Accesibilidad. Estuve siete
+años y medio
 
-32
-00:01:48.500 --> 00:01:52.000
-<c.jose>(JOSE) haciendo auditorías de accesibilidad</c>
-<c.jose>(JOSE) de páginas web</c>
+00:01:48.500 --> 00:01:51.880
+JOSE:
+haciendo auditorías de accesibilidad de
+páginas web
 
-33
 00:01:52.000 --> 00:01:54.120
-<c.jose>(JOSE) y de aplicaciones móviles.</c>
+JOSE:
+y de aplicaciones móviles.
 
-34
 00:01:58.220 --> 00:02:01.360
-<c.monica>(MONICA) Y durante ese tiempo</c>
-<c.monica>(MONICA) estabas en Sevilla, ¿verdad?</c>
+MONICA:
+Y durante ese tiempo estabas en Sevilla,
+¿verdad?
 
-35
 00:02:01.540 --> 00:02:05.000
-<c.jose>(JOSE) Sí, estuve teletrabajando</c>
-<c.jose>(JOSE) en Sevilla.</c>
+JOSE:
+Sí, estuve teletrabajando en Sevilla.
 
-36
-00:02:05.540 --> 00:02:08.500
-<c.monica>(MONICA) Y entonces, cuando</c>
-<c.monica>(MONICA) a los siete años y medio</c>
+00:02:05.540 --> 00:02:08.380
+MONICA:
+Y entonces, cuando a los siete años y
+medio
 
-37
-00:02:08.500 --> 00:02:11.500
-<c.monica>(MONICA) volviste a decidir...</c>
-<c.monica>(MONICA) Como veis, no se queda quieto</c>
+00:02:08.500 --> 00:02:11.380
+MONICA:
+volviste a decidir... Como veis, no se
+queda quieto
 
-38
-00:02:11.500 --> 00:02:14.500
-<c.monica>(MONICA) este hombre. Volviste a decidir</c>
-<c.monica>(MONICA) que querías otro cambio de vida.</c>
+00:02:11.500 --> 00:02:14.380
+MONICA:
+este hombre. Volviste a decidir que
+querías otro cambio de vida.
 
-39
 00:02:14.500 --> 00:02:17.000
-<c.monica>(MONICA) Y esta vez,</c>
-<c.monica>(MONICA) ¿qué decidiste hacer?</c>
+MONICA:
+Y esta vez, ¿qué decidiste hacer?
 
-40
-00:02:17.400 --> 00:02:20.500
-<c.jose>(JOSE) Hice un curso de instructor</c>
-<c.jose>(JOSE) de tiflotecnología y braille</c>
+00:02:17.400 --> 00:02:20.380
+JOSE:
+Hice un curso de instructor de
+tiflotecnología y braille
 
-41
-00:02:20.500 --> 00:02:22.500
-<c.jose>(JOSE) en la ONCE</c>
-<c.jose>(JOSE) y me cambié</c>
+00:02:20.500 --> 00:02:22.380
+JOSE:
+en la ONCE y me cambié
 
-42
-00:02:22.500 --> 00:02:25.000
-<c.jose>(JOSE) de trabajar con las empresas</c>
-<c.jose>(JOSE) a trabajar con los usuarios.</c>
+00:02:22.500 --> 00:02:25.795
+JOSE:
+de trabajar con las empresas a trabajar
+con los usuarios.
 
-43
-00:02:27.960 --> 00:02:30.500
-<c.jose>(JOSE) Estuve trabajando</c>
-<c.jose>(JOSE) un año y medio más o menos,</c>
+00:02:27.960 --> 00:02:30.380
+JOSE:
+Estuve trabajando un año y medio más o
+menos,
 
-44
-00:02:30.500 --> 00:02:33.500
-<c.jose>(JOSE) enseñando a usuarios ciegos</c>
-<c.jose>(JOSE) y con deficiencia visual grave</c>
+00:02:30.500 --> 00:02:33.380
+JOSE:
+enseñando a usuarios ciegos y con
+deficiencia visual grave
 
-45
 00:02:33.500 --> 00:02:36.240
-<c.jose>(JOSE) a manejar la tecnología.</c>
+JOSE:
+a manejar la tecnología.
 
-46
-00:02:37.080 --> 00:02:40.500
-<c.monica>(MONICA) Supongo que ahí viste</c>
-<c.monica>(MONICA) un poco de diferencia, ¿no?</c>
+00:02:37.080 --> 00:02:40.380
+MONICA:
+Supongo que ahí viste un poco de
+diferencia, ¿no?
 
-47
-00:02:40.500 --> 00:02:43.500
-<c.monica>(MONICA) Entre lo que es el trato</c>
-<c.monica>(MONICA) con una empresa</c>
+00:02:40.500 --> 00:02:43.380
+MONICA:
+Entre lo que es el trato con una empresa
 
-48
-00:02:43.500 --> 00:02:46.500
-<c.monica>(MONICA) que al final son las que hacen</c>
-<c.monica>(MONICA) las cosas dirigidas a los usuarios</c>
+00:02:43.500 --> 00:02:46.380
+MONICA:
+que al final son las que hacen las cosas
+dirigidas a los usuarios
 
-49
-00:02:46.500 --> 00:02:49.500
-<c.monica>(MONICA) y ya al trabajar con ellos</c>
-<c.monica>(MONICA) y poder enfrentarte</c>
+00:02:46.500 --> 00:02:49.380
+MONICA:
+y ya al trabajar con ellos y poder
+enfrentarte
 
-50
 00:02:49.500 --> 00:02:52.880
-<c.monica>(MONICA) a esas barreras.</c>
+MONICA:
+a esas barreras.
 
-51
-00:02:53.200 --> 00:02:56.500
-<c.jose>(JOSE) Sí, es diferente</c>
-<c.jose>(JOSE) trabajar con empresas grandes,</c>
+00:02:53.200 --> 00:02:56.380
+JOSE:
+Sí, es diferente trabajar con empresas
+grandes,
 
-52
-00:02:56.500 --> 00:02:59.000
-<c.jose>(JOSE) porque fue lo que me tocó</c>
-<c.jose>(JOSE) en ese momento,</c>
+00:02:56.500 --> 00:02:58.880
+JOSE:
+porque fue lo que me tocó en ese momento,
 
-53
-00:02:59.000 --> 00:03:02.000
-<c.jose>(JOSE) a trabajar con usuarios básicos,</c>
-<c.jose>(JOSE) muchos de ellos</c>
+00:02:59.000 --> 00:03:01.880
+JOSE:
+a trabajar con usuarios básicos, muchos de
+ellos
 
-54
-00:03:02.000 --> 00:03:04.300
-<c.jose>(JOSE) acababan de perder la vista.</c>
+00:03:02.000 --> 00:03:04.180
+JOSE:
+acababan de perder la vista.
 
-55
-00:03:04.300 --> 00:03:07.500
-<c.jose>(JOSE) Es un cambio totalmente diferente</c>
-<c.jose>(JOSE) a la hora de trabajar,</c>
+00:03:04.300 --> 00:03:07.380
+JOSE:
+Es un cambio totalmente diferente a la
+hora de trabajar,
 
-56
 00:03:07.500 --> 00:03:10.500
-<c.jose>(JOSE) pero muy enriquecedor,</c>
-<c.jose>(JOSE) la verdad.</c>
+JOSE:
+pero muy enriquecedor, la verdad.
 
-57
-00:03:15.540 --> 00:03:18.500
-<c.monica>(MONICA) Bueno, y ya creo que llegamos</c>
-<c.monica>(MONICA) un poco a lo que estás haciendo</c>
+00:03:15.540 --> 00:03:18.380
+MONICA:
+Bueno, y ya creo que llegamos un poco a lo
+que estás haciendo
 
-58
-00:03:18.500 --> 00:03:21.500
-<c.monica>(MONICA) en la actualidad.</c>
-<c.monica>(MONICA) Si nos cuentas un poco</c>
+00:03:18.500 --> 00:03:21.380
+MONICA:
+en la actualidad. Si nos cuentas un poco
 
-59
-00:03:21.500 --> 00:03:23.780
-<c.monica>(MONICA) en qué consiste.</c>
+00:03:21.500 --> 00:03:23.660
+MONICA:
+en qué consiste.
 
-60
-00:03:23.780 --> 00:03:26.500
-<c.jose>(JOSE) Ahora trabajo en la ONCE,</c>
-<c.jose>(JOSE) en el Centro</c>
+00:03:23.780 --> 00:03:26.380
+JOSE:
+Ahora trabajo en la ONCE, en el Centro
 
-61
-00:03:26.500 --> 00:03:29.500
-<c.jose>(JOSE) de Tiflotecnología e Innovación.</c>
-<c.jose>(JOSE) Soy el responsable</c>
+00:03:26.500 --> 00:03:29.380
+JOSE:
+de Tiflotecnología e Innovación. Soy el
+responsable
 
-62
-00:03:29.500 --> 00:03:32.500
-<c.jose>(JOSE) del departamento de consultoría</c>
-<c.jose>(JOSE) e innovación.</c>
+00:03:29.500 --> 00:03:32.380
+JOSE:
+del departamento de consultoría e
+innovación.
 
-63
 00:03:32.500 --> 00:03:35.620
-<c.jose>(JOSE) Mi trabajo es coordinar</c>
-<c.jose>(JOSE) diferentes equipos.</c>
+JOSE:
+Mi trabajo es coordinar diferentes
+equipos.
 
-64
-00:03:36.400 --> 00:03:39.500
-<c.jose>(JOSE) Coordino los equipos</c>
-<c.jose>(JOSE) de desarrollo software</c>
+00:03:36.400 --> 00:03:39.380
+JOSE:
+Coordino los equipos de desarrollo
+software
 
-65
-00:03:39.500 --> 00:03:42.500
-<c.jose>(JOSE) donde hacemos aplicaciones</c>
-<c.jose>(JOSE) específicas</c>
+00:03:39.500 --> 00:03:42.380
+JOSE:
+donde hacemos aplicaciones específicas
 
-66
-00:03:42.500 --> 00:03:45.000
-<c.jose>(JOSE) que no están en las tiendas</c>
-<c.jose>(JOSE) habitualmente.</c>
+00:03:42.500 --> 00:03:44.880
+JOSE:
+que no están en las tiendas habitualmente.
 
-67
-00:03:45.000 --> 00:03:48.000
-<c.jose>(JOSE) Alguna aplicación para acceder</c>
-<c.jose>(JOSE) a los libros digitales</c>
+00:03:45.000 --> 00:03:47.880
+JOSE:
+Alguna aplicación para acceder a los
+libros digitales
 
-68
-00:03:48.000 --> 00:03:51.000
-<c.jose>(JOSE) que ONCE pone a disposición</c>
-<c.jose>(JOSE) de los afiliados</c>
+00:03:48.000 --> 00:03:50.880
+JOSE:
+que ONCE pone a disposición de los
+afiliados
 
-69
-00:03:51.000 --> 00:03:53.500
-<c.jose>(JOSE) o al contenido audiodescrito,</c>
-<c.jose>(JOSE) aplicaciones para transcribir</c>
+00:03:51.000 --> 00:03:53.380
+JOSE:
+o al contenido audiodescrito, aplicaciones
+para transcribir
 
-70
-00:03:53.500 --> 00:03:56.500
-<c.jose>(JOSE) textos de braille a tinta,</c>
-<c.jose>(JOSE) un editor científico matemático.</c>
+00:03:53.500 --> 00:03:56.912
+JOSE:
+textos de braille a tinta, un editor
+científico matemático.
 
-71
-00:04:00.620 --> 00:04:03.500
-<c.jose>(JOSE) Y luego también coordino</c>
-<c.jose>(JOSE) el área de evaluaciones</c>
+00:04:00.620 --> 00:04:03.380
+JOSE:
+Y luego también coordino el área de
+evaluaciones
 
-72
-00:04:03.500 --> 00:04:06.500
-<c.jose>(JOSE) donde hacemos evaluaciones</c>
-<c.jose>(JOSE) de accesibilidad</c>
+00:04:03.500 --> 00:04:06.380
+JOSE:
+donde hacemos evaluaciones de
+accesibilidad
 
-73
-00:04:06.500 --> 00:04:08.480
-<c.jose>(JOSE) de aplicaciones móviles</c>
-<c.jose>(JOSE) y páginas web.</c>
+00:04:06.500 --> 00:04:08.020
+JOSE:
+de aplicaciones móviles y páginas web.
 
-74
-00:04:08.140 --> 00:04:11.000
-<c.jose>(JOSE) Un área de asesoría tiflotécnica</c>
-<c.jose>(JOSE) que son los técnicos</c>
+00:04:08.140 --> 00:04:10.880
+JOSE:
+Un área de asesoría tiflotécnica que son
+los técnicos
 
-75
-00:04:11.000 --> 00:04:13.500
-<c.jose>(JOSE) que enseñan a los usuarios</c>
-<c.jose>(JOSE) a manejar la tecnología,</c>
+00:04:11.000 --> 00:04:13.380
+JOSE:
+que enseñan a los usuarios a manejar la
+tecnología,
 
-76
-00:04:13.500 --> 00:04:15.400
-<c.jose>(JOSE) como yo hacía antes.</c>
+00:04:13.500 --> 00:04:15.280
+JOSE:
+como yo hacía antes.
 
-77
-00:04:15.400 --> 00:04:18.500
-<c.jose>(JOSE) Y luego algo muy diferente</c>
-<c.jose>(JOSE) que es la parte</c>
+00:04:15.400 --> 00:04:18.380
+JOSE:
+Y luego algo muy diferente que es la parte
 
-78
-00:04:18.500 --> 00:04:21.500
-<c.jose>(JOSE) de diseño y producción</c>
-<c.jose>(JOSE) donde trabajamos</c>
+00:04:18.500 --> 00:04:21.380
+JOSE:
+de diseño y producción donde trabajamos
 
-79
-00:04:21.500 --> 00:04:24.000
-<c.jose>(JOSE) con impresoras 3D,</c>
-<c.jose>(JOSE) con impresoras</c>
+00:04:21.500 --> 00:04:23.880
+JOSE:
+con impresoras 3D, con impresoras
 
-80
-00:04:24.000 --> 00:04:26.500
-<c.jose>(JOSE) de tinta ultravioleta</c>
-<c.jose>(JOSE) y con cortadoras láser</c>
+00:04:24.000 --> 00:04:26.380
+JOSE:
+de tinta ultravioleta y con cortadoras
+láser
 
-81
 00:04:26.500 --> 00:04:29.660
-<c.jose>(JOSE) para hacer productos</c>
-<c.jose>(JOSE) muy específicos.</c>
+JOSE:
+para hacer productos muy específicos.
 
-82
-00:04:29.800 --> 00:04:32.500
-<c.jose>(JOSE) Por ejemplo,</c>
-<c.jose>(JOSE) como juegos de mesa</c>
+00:04:29.800 --> 00:04:32.380
+JOSE:
+Por ejemplo, como juegos de mesa
 
-83
-00:04:32.500 --> 00:04:35.500
-<c.jose>(JOSE) o adaptaciones para dispositivos</c>
-<c.jose>(JOSE) de vida diaria</c>
+00:04:32.500 --> 00:04:35.380
+JOSE:
+o adaptaciones para dispositivos de vida
+diaria
 
-84
-00:04:35.500 --> 00:04:38.000
-<c.jose>(JOSE) como las cocinas o las cafeteras,</c>
-<c.jose>(JOSE) un poco de todo.</c>
+00:04:35.500 --> 00:04:38.383
+JOSE:
+como las cocinas o las cafeteras, un poco
+de todo.
 
-85
-00:04:39.220 --> 00:04:42.000
-<c.monica>(MONICA) Sí, pero como no se puede</c>
-<c.monica>(MONICA) estar quieto,</c>
+00:04:39.220 --> 00:04:41.880
+MONICA:
+Sí, pero como no se puede estar quieto,
 
-86
-00:04:42.000 --> 00:04:44.500
-<c.monica>(MONICA) además de dedicarse</c>
-<c.monica>(MONICA) a este trabajo tan apasionante,</c>
+00:04:42.000 --> 00:04:44.380
+MONICA:
+además de dedicarse a este trabajo tan
+apasionante,
 
-87
 00:04:44.500 --> 00:04:46.440
-<c.monica>(MONICA) ¿qué haces en tu tiempo libre?</c>
+MONICA:
+¿qué haces en tu tiempo libre?
 
-88
-00:04:47.300 --> 00:04:50.500
-<c.jose>(JOSE) Bueno, en mi tiempo libre</c>
-<c.jose>(JOSE) de todo un poco.</c>
+00:04:47.300 --> 00:04:50.380
+JOSE:
+Bueno, en mi tiempo libre de todo un poco.
 
-89
-00:04:50.500 --> 00:04:53.000
-<c.jose>(JOSE) Me gusta hacer senderismo,</c>
-<c.jose>(JOSE) viajar, leer,</c>
+00:04:50.500 --> 00:04:52.880
+JOSE:
+Me gusta hacer senderismo, viajar, leer,
 
-90
-00:04:53.000 --> 00:04:55.000
-<c.jose>(JOSE) estar con mi familia,</c>
-<c.jose>(JOSE) de todo un poco.</c>
+00:04:53.000 --> 00:04:55.236
+JOSE:
+estar con mi familia, de todo un poco.
 
-91
-00:04:57.500 --> 00:05:00.500
-<c.jose>(JOSE) Y ahora estoy haciendo un máster</c>
-<c.jose>(JOSE) en la Universidad de Barcelona</c>
+00:04:57.500 --> 00:05:00.380
+JOSE:
+Y ahora estoy haciendo un máster en la
+Universidad de Barcelona
 
-92
 00:05:00.500 --> 00:05:04.080
-<c.jose>(JOSE) de accesibilidad y diseño</c>
-<c.jose>(JOSE) para la educación.</c>
+JOSE:
+de accesibilidad y diseño para la
+educación.
 
-93
-00:05:04.760 --> 00:05:08.000
-<c.monica>(MONICA) Esto es lo que</c>
-<c.monica>(MONICA) nos cuenta Jose.</c>
+00:05:04.760 --> 00:05:07.880
+MONICA:
+Esto es lo que nos cuenta Jose.
 
-94
-00:05:08.000 --> 00:05:11.000
-<c.monica>(MONICA) Así que ahí tenéis</c>
-<c.monica>(MONICA) su interesante trayectoria</c>
+00:05:08.000 --> 00:05:10.880
+MONICA:
+Así que ahí tenéis su interesante
+trayectoria
 
-95
-00:05:11.000 --> 00:05:13.500
-<c.monica>(MONICA) profesional y académica.</c>
-<c.monica>(MONICA) Espero que os haya gustado.</c>
+00:05:11.000 --> 00:05:14.000
+MONICA:
+profesional y académica. Espero que os
+haya gustado.
 
-96
-00:05:17.860 --> 00:05:18.100
-<c.jose>(JOSE) Gracias.</c>
+00:05:17.860 --> 00:05:19.660
+JOSE:
+Gracias.
