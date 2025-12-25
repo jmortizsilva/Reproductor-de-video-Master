@@ -36,16 +36,39 @@
             margin: 0 auto;
         }
         
-        /* Estilos para subtítulos con identificación de hablantes por VOZ (especificación W3C WebVTT) */
-        video::cue(v[voice="Monica"]) {
-            color: cyan !important;
+        /* Estilos para Able Player usando etiquetas <c> con clases CSS */
+        /* Colores según UNE 153010: Amarillo=protagonista principal, Verde=segundo protagonista */
+        
+        /* Able Player renderiza las etiquetas <c> en el DOM */
+        .able-captions-wrapper .able-captions-div .monica {
+            color: lime !important;
+            background-color: black !important;
+            padding: 2px 5px !important;
         }
         
-        video::cue(v[voice="Jose"]) {
+        .able-captions-wrapper .able-captions-div .jose {
             color: yellow !important;
+            background-color: black !important;
+            padding: 2px 5px !important;
+        }
+        
+        /* Fallback para reproductores nativos usando ::cue */
+        video::cue(.monica) {
+            color: lime !important;
+            background-color: black !important;
+        }
+        
+        video::cue(.jose) {
+            color: yellow !important;
+            background-color: black !important;
         }
         
         /* Estilos generales para los subtítulos */
+        .able-captions-wrapper .able-captions-div {
+            font-size: 1.2em !important;
+            background-color: rgba(0, 0, 0, 0.9) !important;
+        }
+        
         video::cue {
             background-color: rgba(0, 0, 0, 0.8) !important;
             font-size: 1.2em;
@@ -149,5 +172,42 @@
     
     <!-- JavaScript - Custom TOTHOMweb -->
     <script src="custom-player.js"></script>
+    
+    <!-- JavaScript - Aplicar colores UNE 153010 a subtítulos de Able Player -->
+    <script>
+        // Función para aplicar colores a los subtítulos según las etiquetas
+        function applySubtitleColors() {
+            const captionsDiv = document.querySelector('.able-captions');
+            if (!captionsDiv) {
+                setTimeout(applySubtitleColors, 500);
+                return;
+            }
+            
+            // Usar MutationObserver para detectar cuando cambian los subtítulos
+            const observer = new MutationObserver(() => {
+                const text = captionsDiv.textContent;
+                
+                if (text.includes('(JOSE)')) {
+                    // Amarillo para Jose (protagonista principal) según UNE 153010
+                    captionsDiv.style.color = 'yellow';
+                } else if (text.includes('(MONICA)')) {
+                    // Verde para Monica (segundo protagonista) según UNE 153010
+                    captionsDiv.style.color = 'lime';
+                } else {
+                    // Color por defecto
+                    captionsDiv.style.color = 'white';
+                }
+            });
+            
+            observer.observe(captionsDiv, { childList: true, subtree: true, characterData: true });
+            
+            console.log('✅ Monitor de colores de subtítulos activado');
+        }
+        
+        // Ejecutar cuando Able Player esté listo
+        window.addEventListener('load', () => {
+            setTimeout(applySubtitleColors, 1000);
+        });
+    </script>
 </body>
 </html>

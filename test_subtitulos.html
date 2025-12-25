@@ -52,16 +52,20 @@
             margin-right: 5px;
         }
         
-        .cyan { background-color: cyan; }
+        .green { background-color: lime; }
         .yellow { background-color: yellow; }
         
-        /* Estilos WebVTT para identificación de hablantes por voz */
-        video::cue(v[voice="Monica"]) {
-            color: cyan;
-        }
-        
+        /* Estilos para identificación de hablantes con colores según UNE 153010 */
+        /* Amarillo sobre negro: Protagonista principal (mayor densidad de diálogo) */
         video::cue(v[voice="Jose"]) {
             color: yellow;
+            background-color: black;
+        }
+        
+        /* Verde sobre negro: Segundo protagonista (menor densidad de diálogo) */
+        video::cue(v[voice="Monica"]) {
+            color: lime;
+            background-color: black;
         }
         
         video::cue {
@@ -83,8 +87,8 @@
         <h2>✅ Verificación de Colores según UNE 153010</h2>
         <p><strong>Los subtítulos deberían mostrarse con:</strong></p>
         <ul>
-            <li><span class="color-sample cyan"></span> <strong>Mónica:</strong> Color cyan (cian)</li>
-            <li><span class="color-sample yellow"></span> <strong>Jose:</strong> Color yellow (amarillo)</li>
+            <li><span class="color-sample yellow"></span> <strong>Jose (protagonista principal):</strong> Amarillo sobre negro</li>
+            <li><span class="color-sample green"></span> <strong>Mónica (segundo protagonista):</strong> Verde sobre negro</li>
         </ul>
         
         <p><strong>Implementación en el VTT (formato W3C estándar):</strong></p>
@@ -106,8 +110,9 @@ Subtítulos con etiquetas de voz según especificación W3C
         
         <p><strong>CSS para aplicar colores:</strong></p>
         <pre style="background-color: #f0f0f0; padding: 15px; border-radius: 5px; overflow-x: auto;">
-video::cue(v[voice="Monica"]) { color: cyan; }
-video::cue(v[voice="Jose"]) { color: yellow; }
+/* UNE 153010: Amarillo=protagonista principal, Verde=segundo protagonista */
+video::cue(v[voice="Jose"]) { color: yellow; background-color: black; }
+video::cue(v[voice="Monica"]) { color: lime; background-color: black; }
         </pre>
         
         <h3>🔍 ¿Qué estamos probando?</h3>
